@@ -1,50 +1,53 @@
-📝 AI Meeting Assistant
-An AI-powered Meeting Preparation and Task Management Assistant
-Built with LangChain, CrewAI, OpenAI, Todoist, Telegram, and Streamlit.
+# 📝 AI Meeting Assistant
 
-📌 Project Overview
-This application helps you prepare for business meetings intelligently.
-It analyzes company and meeting context, creates agendas, summarizes meetings, extracts action tasks, and notifies teams via Telegram – all powered by AI.
+An AI-powered Meeting Preparation and Task Management Assistant  
+Built using **LangChain**, **CrewAI**, **OpenAI GPT-4**, **Todoist**, **Telegram**, and **Streamlit**.
 
-Key Features:
+---
 
-📚 Prepare context analysis, meeting strategies, and executive briefs using CrewAI agents.
+## 📌 Project Overview
 
-🤖 Use LLMs (GPT-4 via OpenAI) for fallback analysis if needed.
+**AI Meeting Assistant** streamlines meeting preparation by generating context documents, agendas, action tasks, and real-time notifications — powered by LLMs and multi-agent collaboration.
 
-📂 Upload PDFs or text files as supporting documents.
+---
 
-💬 Interact with a Q&A bot trained on meeting materials.
+## ✨ Key Features
 
-📋 Extract tasks from meeting transcripts or materials.
+- 📚 Generate **context analysis**, **meeting strategies**, and **executive briefs** using CrewAI agents.
+- 📂 Upload and process **PDFs** and **text documents** for enhanced meeting context.
+- 💬 **Chatbot Q&A** trained on your meeting materials.
+- 📋 **Extract tasks** from transcripts and automatically create **Todoist** projects.
+- 📲 **Send notifications** via **Telegram** to your team or group chats.
 
-✅ Assign tasks and create projects directly in Todoist.
+---
 
-📲 Send task summaries and notifications directly to Telegram groups or users.
+## 🛠 Tech Stack
 
-🛠 Tech Stack
+| Technology            | Purpose                                 |
+|------------------------|-----------------------------------------|
+| **Streamlit**          | Frontend Web Application                |
+| **OpenAI (GPT-4)**     | Language Model for Reasoning & Generation |
+| **CrewAI**             | Multi-agent Collaboration              |
+| **LangChain + FAISS**  | Context Storage and Retrieval          |
+| **Todoist API**        | Task and Project Management            |
+| **Telegram Bot API**   | Meeting Task Notifications             |
 
-Technology	Purpose
-Streamlit	Web Application UI
-OpenAI (GPT-4)	LLM for context generation and Q&A
-CrewAI	Multi-agent collaborative processing
-LangChain	Vector storage (FAISS), document splitting
-Todoist API	Task and project management
-Telegram Bot API	Notifications for meeting tasks
-FAISS	Vector database for question answering
-🚀 Setup Instructions
-1. Clone this Repository
-bash
-Copy
-Edit
+---
+
+## 🚀 Getting Started
+
+### 1. Clone Repository
+
+```bash
 git clone https://github.com/your-username/ai-meeting-assistant.git
 cd ai-meeting-assistant
-2. Install Requirements
-bash
-Copy
-Edit
+
+
 pip install -r requirements.txt
-Dependencies include:
+
+
+
+Main libraries used:
 
 streamlit
 
@@ -56,101 +59,27 @@ openai
 
 faiss-cpu
 
-pandas
-
-python-dotenv
-
 todoist-python
 
 python-telegram-bot
 
-etc.
+🚀 Build smarter meetings with AI!
 
-(You can generate requirements.txt easily if you need.)
 
-3. API Keys Required
-You will need the following:
+---
 
-🔑 OpenAI API Key (for GPT-4 usage)
+# ✅ This version:
 
-📝 Todoist API Key (for managing tasks)
+- **Uses proper GitHub markdown** for tables, headings, bullets, code blocks.
+- **Looks clean and professional** on GitHub and anywhere else.
+- **Ready to be copy-pasted directly** into your GitHub `README.md` file.
 
-📣 Telegram Bot Token + Chat ID (optional, for team notifications)
+---
 
-You can enter these in the sidebar when the app starts.
+Would you also like me to:
 
-4. Run the App
-bash
-Copy
-Edit
-streamlit run app.py
-📋 Core Features Explained
-➡️ Meeting Setup
-Configure company, meeting objective, attendees, duration, and focus areas.
+- 💬 Generate a **short GitHub project description** (the small tagline below project title)?
+- 🎨 Suggest a **cool GitHub project cover/banner** you can upload to make it look even better?
 
-Upload PDFs or text files for additional meeting context.
-
-➡️ Preparation Results
-Agents prepare:
-
-📄 Context Analysis (company background, stakeholders)
-
-🗂️ Meeting Strategy (agenda, questions, role assignments)
-
-🧠 Executive Brief (summary, key points, Q&A prep)
-
-Download all generated documents in markdown format.
-
-➡️ Q&A Assistant
-Ask questions about the meeting using a ChatGPT-powered assistant.
-
-Sources from your uploaded files and context documents.
-
-➡️ Task Management
-Extract action tasks from meeting transcript or preparation.
-
-Create Todoist projects automatically.
-
-Assign tasks to teammates.
-
-Send task summaries to your Telegram group or DM.
-
-🧠 How Agents Work (CrewAI)
-Agents created:
-
-🧠 Context Analyst: Prepares detailed background analysis.
-
-🎯 Meeting Strategist: Designs agenda and success criteria.
-
-🗣️ Executive Briefer: Crafts summarized executive briefing.
-
-If CrewAI fails for any reason, a fallback GPT-4 prompt method is used automatically.
-
-🌐 Integration Overview
-Todoist:
-
-Create and manage projects and tasks.
-
-Automatically assign tasks with deadlines and priorities.
-
-Telegram:
-
-Send meeting summaries and task lists to a team via a bot.
-
-Google Meet, WhatsApp, Telegram transcripts:
-
-Parse meeting transcripts to generate tasks automatically.
-
-📦 Project Structure
-graphql
-Copy
-Edit
-├── app.py               # Streamlit app (Main file)
-├── utils/
-│   ├── TodoistTools.py   # Manage Todoist API integration
-│   ├── TranscriptExtractor.py # Extract transcript text
-│   ├── TelegramCommunicator.py # Send Telegram messages
-│   ├── TaskExtractor.py  # Extract tasks from transcripts
-│   └── TodoistMeetingManager.py # Meeting management orchestration
-├── requirements.txt
-└── README.md
+Would you like me to continue? 🚀✨  
+(You’re very close to a perfect open-source laun
